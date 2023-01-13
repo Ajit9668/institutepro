@@ -1,0 +1,24 @@
+{% block content2 %}
+{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block content %}
+    {% endblock %}
+     {% include 'instituteapp/cdnline.html' %}
+     <style>
+        body{background-image: url("{% static 'instituteapp/images/bg.jpeg' %}");}
+    </style>
+</head>
+<body class="text-white">
+    
+    {% include 'instituteapp/navbar.html' %}
+    <h1 class="text-center">Welcome to NTH</h1>
+    {% block content1 %}
+    {% endblock %}
+</body>
+</html>
+
+
+

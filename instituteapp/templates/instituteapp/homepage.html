@@ -1,0 +1,42 @@
+{% extends 'instituteapp/base.html' %}
+{% block content2 %}
+{% load static %}
+{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block content %}
+    <title>home</title>
+    {% endblock %}
+</head>
+<body>
+    {% block content1 %}
+    <h1 class="text-center text-danger">Welcome To Home Page</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center text-white" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <h4>About Us</h4>
+                <h6>Narayana Tech House (Pronouced:NTH) is a learning it training institute providing Python full-stack course ,java, UI Course etc. NTH is armed with a noble vision to make a difference in the career aspirations of the students.</h6>
+            </div>
+            <div class="col-3 mt-3 ml-5 text-center" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/python.jpeg' %}" class="mt-2" class="img-thumbnail" style=" width:200px;height:180px;">
+                <p class="mt-5">Python is a general-purpose, object-oriented, high-level programming language. Whether you work in artificial intelligence or finance or are pursuing a career in web development or data science,</p>
+                <a href="" class="btn btn-sm btn-danger mt-3">Contact us</a>
+            </div>
+            <div class="offset-1 col-3 mt-3 text-center" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/java.jpeg' %}" class="mt-2" style=" width:200px;height:180px; border-radius:50%;">
+                <p class="mt-5">Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language. Java was developed by Sun Microsystems</p>
+                <a href="" class="btn btn-sm btn-danger mt-3">Contact us</a>
+            </div>
+            <div class="offset-1 col-3 mt-3 text-center" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/ui.jpeg' %}" class="mt-2" style=" width:200px; height:180px; border-radius:30%;">
+                <p class="mt-5">Front-end web development is the work of creating all of the user-facing elements of web pages, encompassing aspects such as graphic design, user interface (UI) design, and the overall user experience (UX).
+                </p>
+                <a href="" class="btn btn-sm btn-danger mt-3">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <h3 class="text-center text-white mt-3">Thank You..</h3>
+    {% endblock %}
+</body>
+</html>

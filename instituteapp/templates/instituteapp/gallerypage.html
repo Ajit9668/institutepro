@@ -1,0 +1,58 @@
+{% extends 'instituteapp/base.html' %}
+{% block content2 %}
+{% load static %}
+{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block content %}
+     <title>gallery</title>
+     {% endblock %}
+</head>
+<body>
+    {% block content1 %}
+    <h1 class="text-center">Welcome to Gallery Page</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 ml-5 mr-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery1.jpg' %}" style=" width:300px;height:250px; border-radius:50%;">
+            </div>
+            <div class="col-md-3 ml-5 mr-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery2.jpg' %}" style=" width:300px;height:250px; border-radius:50%;">
+            </div>
+            <div class="col-md-3 ml-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery3.jpg' %}" style=" width:300px;height:250px; border-radius:50%;">
+            </div>
+            <div class="col-md-3 ml-5 mt-5 mr-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery4.jpg' %}" style=" width:300px;height:250px; border-radius:10%;">
+            </div>
+            <div class="col-md-3 ml-5 mt-5 mr-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery5.jpg' %}" style=" width:300px;height:250px; border-radius:10%;">
+            </div>
+            <div class="col-md-3 ml-5 mt-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery6.jpg' %}" style=" width:300px;height:250px; border-radius:10%;">
+            </div>
+            <div class="col-md-3 ml-5 mr-5 mt-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery7.jpg' %}" style=" width:300px;height:250px; border-radius:50%;">
+            </div>
+            <div class="col-md-3 ml-5 mr-5 mt-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery8.jpg' %}" style=" width:300px;height:250px; border-radius:50%;">
+            </div>
+            <div class="col-md-3 ml-5 mt-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery9.jpg' %}" style=" width:300px;height:250px; border-radius:50%;">
+            </div>
+            <div class="col-md-3 ml-5 mr-5 mt-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery10.jpg' %}" style=" width:300px;height:250px; border-radius:10%;">
+            </div>
+            <div class="col-md-3 ml-5 mr-5 mt-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/gallery11.jpg' %}" style=" width:300px;height:250px; border-radius:50%;">
+            </div>
+            <div class="col-md-3 ml-5 mt-5" style="border-radius: 10px; box-shadow: 0px 0px 25px whitesmoke;">
+                <img src="{% static 'instituteapp/images/bg.jpeg' %}" style=" width:300px;height:250px; border-radius:10%;">
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center mt-3 mb-5">Thank You..Visit Again...</h1>
+    {% endblock %}
+</body>
+</html>

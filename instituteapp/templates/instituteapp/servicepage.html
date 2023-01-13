@@ -1,0 +1,56 @@
+{% extends 'instituteapp/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block content %}
+     <title>service</title>
+     {% endblock %}
+</head>
+<body>
+    {% block content1 %}
+    
+<div class="container">
+    <div class="row">
+        <div class="offset-1 col-md-10">
+            {% if data %}
+            <table class="table table-bordered text-center text-white">
+                <thead class="bg-success">
+                    <tr>
+                        <th> Course Name</th>
+                        <th> Fee</th>
+                        <th>Durations</th>
+                        <th>Starting Date</th>
+                        <th>Trainer Name</th>
+                        <th>Trainer Experience</th>
+                        <th>Training Mode</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-dark">
+                    {% for i in data %}
+                    <tr>
+                        <td>{{i.course_name}}</td>
+                        <td>{{i.fee}}</td>
+                        <td>{{i.duration}}</td>
+                        <td>{{i.start_date}}</td>
+                        <td>{{i.trainer_name}}</td>
+                        <td>{{i.trainer_exp}}</td>
+                        <td>{{i.training_mode}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            {% else %}
+            <h1>No data avilable</h1>
+            {% endif%}
+        </div>
+    </div>
+</div>
+
+
+
+
+    {% endblock %}
+</body>
+</html>
+

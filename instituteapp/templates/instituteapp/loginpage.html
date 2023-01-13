@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>loginpage</title>
+     {% include 'instituteapp/cdnline.html' %}
+</head>
+<body>
+    <h1 class="text-center mb-5">Login Here..</h1>
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <form method="POST" style="padding: 5px; border-radius: 10px; box-shadow: 0px 0px 25px red;">
+                    {% csrf_token %}
+                    <label>User Name:</label>
+                    <input type="text" name="username" class="form-control">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control">
+                    <center class="mt-2">
+                    <input type="submit" value="login" class="btn btn-outline-success">
+                    <input type="reset" value="cancel" class="btn btn-outline-danger"><br>
+                    <a href="/instituteapp/register" class="mt-2 btn btn-sm btn-outline-primary mt-2">Create Account..</a>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
